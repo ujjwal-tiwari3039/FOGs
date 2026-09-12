@@ -1,4 +1,4 @@
-# ED-05: Bias-Resistant Short-Answer Assessment
+# FOGs: Bias-Resistant Short-Answer Assessment
 
 ## Challenge
 Three-class short-answer grading (correct / contradictory / incorrect) from the SemEval 2013 Task 7 dataset, with a focus on **robustness** and **explainability** rather than raw accuracy alone.
