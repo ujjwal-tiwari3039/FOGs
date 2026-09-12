@@ -1,0 +1,25 @@
+project:
+  name: "Bias-Resistant Short-Answer Assessment"
+  seed: 42
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  train_file: "data/raw/train.csv"
+  dev_file: "data/raw/dev.csv"
+
+model:
+  embedding_model: "all-MiniLM-L6-v2"
+  classifier_type: "LogisticRegression"
+  calibration_method: "temperature_scaling"
+  device: "cpu" # change to "cuda" if GPU is available
+
+evaluation:
+  cf_threshold: 0.1
+  calibration_bins: 10
+
+paths:
+  model_save_path: "results/model.joblib"
+  scaler_save_path: "results/scaler.joblib"
+  metrics_save_path: "results/metrics.json"
+  robustness_save_path: "results/robustness_report.json"

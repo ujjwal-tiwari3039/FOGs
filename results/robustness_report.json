@@ -1,0 +1,30 @@
+{
+    "cf1": {
+        "consistency": 0.946,
+        "avg_abs_diff": 0.02559756988413373,
+        "inflation": -0.01886807333201652,
+        "max_inflation": 0.39556070616336636,
+        "median_inflation": -0.009063403345581967
+    },
+    "cf2": {
+        "consistency": 0.832,
+        "avg_abs_diff": 0.06722345539890524,
+        "inflation": -0.01526118535059148,
+        "max_inflation": 0.19271204492264038,
+        "median_inflation": -0.0016133053849474914
+    },
+    "cf3": {
+        "consistency": 0.817,
+        "avg_abs_diff": 0.07158616853555506,
+        "inflation": 0.07600683269555095,
+        "max_inflation": 0.3793804507730107,
+        "median_inflation": 0.06617644516802221
+    },
+    "cf4": {
+        "consistency": 0.9,
+        "avg_abs_diff": 0.04470307527712326,
+        "inflation": 0.0009714395708528806,
+        "max_inflation": 0.3221083467335731,
+        "median_inflation": 0.0
+    }
+}
