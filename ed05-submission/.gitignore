@@ -1,4 +1,54 @@
-data/
-models/
+# Python
 __pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Next.js / Node
+node_modules/
+.next/
+out/
+build/
+.env
+.env.*
+!.env.example
+
+# Models & Data (Private Data)
+models/
+data/
 *.pkl
+*.pth
+*.pt
+*.safetensors
+
+# Media / Images (as requested)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+
+# Markdown (as requested, but keeping presentation/README)
+*.md
+!README.md
+!presentation.md
+
+# OS Files
+.DS_Store
+Thumbs.db
