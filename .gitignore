@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+results/*.joblib
+results/*.json
+data/raw/semeval_repo/
+.DS_Store
+.vscode/
+.idea/
