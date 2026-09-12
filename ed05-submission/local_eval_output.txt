@@ -1,0 +1,58 @@
+============================================================
+  ED-05 LOCAL EVALUATION — Test Set Generalization
+  ⚠️  This script reads test/3way/** for reporting ONLY.
+  ⚠️  No output feeds back into training or features.
+============================================================
+
+==================================================
+  Test Set (all): 7093 total student answers
+==================================================
+  correct        :  2971  ( 41.9%)
+  contradictory  :   894  ( 12.6%)
+  incorrect      :  3228  ( 45.5%)
+  ---            
+  beetle         :  1258
+  sciEntsBank    :  5835
+  ---            
+  No ref answers: 0
+  Questions w/ multiple refs: 52
+  Max refs per question: 14
+  Loading sentence-transformers model...
+  Sentence model loaded.
+  Caching embeddings for 252 questions...
+  Cached 252 question reference embeddings.
+  Model loaded from /home/samashech/Documents/FOGs/ed05-submission/models/model.pkl
+
+  Overall Test Macro-F1: 0.4239
+
+               precision    recall  f1-score   support
+
+      correct       0.18      0.01      0.01       894
+contradictory       0.59      0.67      0.62      2971
+    incorrect       0.60      0.68      0.63      3228
+
+     accuracy                           0.59      7093
+    macro avg       0.45      0.45      0.42      7093
+ weighted avg       0.54      0.59      0.55      7093
+
+
+────────────────────────────────────────────────────────────
+  Per-Condition Macro-F1:
+────────────────────────────────────────────────────────────
+  test-unseen-answers      : F1=0.4197  (n=979)
+    ⚠️  Class 'contradictory' has only 0.3% of predictions
+  test-unseen-domains      : F1=0.4211  (n=4562)
+    ⚠️  DEGENERATE: Only 2 classes predicted! Distribution: {'incorrect': 2470, 'correct': 2092}
+    ⚠️  ZERO RECALL for class 'contradictory'! (417 true examples, none predicted correctly)
+  test-unseen-questions    : F1=0.4249  (n=1552)
+    ⚠️  Class 'contradictory' has only 1.9% of predictions
+
+────────────────────────────────────────────────────────────
+  Per-Domain Macro-F1:
+────────────────────────────────────────────────────────────
+  beetle                   : F1=0.3971  (n=1258)
+  sciEntsBank              : F1=0.4223  (n=5835)
+
+============================================================
+  ✅ Evaluation complete. No data fed back to training.
+============================================================
